@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* 30deg son los grados */
+    background: linear-gradient(50deg, #8300ae, #29018d);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #8300ae;
+
+
+    /* DARK THEME */
+    &.dark {
+        background-color: #232323;
+
+        button {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            margin: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 200ms ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        #clear {
+            color: #000000;
+            background: #c52b00;
+        }
+
+        .btn-number {
+            background: #458d01;
+        }
+
+        .btn-operetor {
+            background: #c58a00;
+        }
+
+        .btn-plus {
+            background: #00fbff;
+            height: 120px;
+        }
+
+        .btn-equal {
+            background: rgb(47, 255, 75);
+            height: 120px;
+        }
+    }
+
+    .theme-toggler {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background: #333;
+            z-index: -1;
+        }
+    }
+
+    .theme-toggler .active {
+        color: #333;
+
+        &::before {
+            background-color: #fff;
+        }
+    }
+
+    #display {
+        font-size: 30px;
+        color: aqua;
+        height: 100px;
+        width: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+
+    button {
+        border-style: none;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        margin: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 200ms ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    #clear {
+        color: red;
+        background: #29018d;
+        padding: 5px;
+    }
+
+    .btn-number {
+        background: #018d8d;
+    }
+
+    .btn-operetor {
+        background: #aec500;
+    }
+
+    .btn-plus {
+        background: #aec500;
+        height: 120px;
+    }
+
+    .btn-equal {
+        background: greenyellow;
+        color: aliceblue;
+        height: 120px;
+    }
+}
