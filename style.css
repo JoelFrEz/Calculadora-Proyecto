@@ -25,12 +25,14 @@ body {
     width: auto;
     padding: 20px;
     border-radius: 10px;
+    background: linear-gradient(#8300ae, #29018d);
     box-shadow: 0 0 30px #8300ae;
 
 
     /* DARK THEME */
     &.dark {
-        background-color: #232323;
+        background: linear-gradient(#232323, #29018d);
+
 
         button {
             height: 50px;
@@ -86,16 +88,16 @@ body {
             top: 50%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
-            background: #333;
+            background-color: #333;
             z-index: -1;
         }
     }
 
-    .theme-toggler .active {
+    .theme-toggler.active {
         color: #333;
 
         &::before {
-            background-color: #fff;
+            background-color: #8300ae;
         }
     }
 

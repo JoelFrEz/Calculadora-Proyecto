@@ -11,6 +11,7 @@ buttons.forEach((item) => {
             let string = display.innerText.toString();
             display.innerText = string.substr(0, string.length - 1);
         } else if (display.innerText != "" && item.id == "equal") {
+            //(eval nos ayuda a evaluar si es + - o un por) 
             display.innerText = eval(display.innerText);
         } else if (display.innerText == "" && item.id == "equal") {
             display.innerText = "Has un calculo";
@@ -20,3 +21,13 @@ buttons.forEach((item) => {
         }
     };
 });
+
+const themeToggleBtn = document.querySelector(".theme-toggler");
+const calculator = document.querySelector(".calculator");
+let isDark = true;
+
+themeToggleBtn.onclick = () => {
+    calculator.classList.toggle("dark");
+    themeToggleBtn.classList.toggle("active");
+    isDark = !isDark;
+};
