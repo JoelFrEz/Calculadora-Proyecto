@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="displat-screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-operetor" id="clear">C</button></td>
+                        <td><button class="btn-operetor" id="dividir">/</button></td>
+                        <td><button class="btn-operetor" id="multiplicar">X</button></td>
+                        <td><button class="btn-operetor" id="backspace">d</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operetor" id="7">7</button></td>
+                        <td><button class="btn-operetor" id="8">8</button></td>
+                        <td><button class="btn-operetor" id="9">9</button></td>
+                        <td><button class="btn-operetor" id="menos">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operetor" id="4">4</button></td>
+                        <td><button class="btn-operetor" id="5">5</button></td>
+                        <td><button class="btn-operetor" id="6">6</button></td>
+                        <td><button class="btn-operetor" id="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operetor" id="1">1</button></td>
+                        <td><button class="btn-operetor" id="2">2</button></td>
+                        <td><button class="btn-operetor" id="3">3</button></td>
+                        <td rowspan="2"><button class="btn-equal">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operetor" id=".">.</button></td>
+                        <td><button class="btn-operetor" id="0">0</button></td>
+                        <td><button class="btn-operetor" id="00">00</button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+
+    </div>
 </body>
+
 </html>
