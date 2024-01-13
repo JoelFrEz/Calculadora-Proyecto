@@ -1,6 +1,6 @@
 "use strict";
 
-const display = document.querySelector("#display-screen");
+const display = document.querySelector("#display");
 const buttons = document.querySelectorAll("button");
 
 buttons.forEach((item) => {
@@ -13,8 +13,8 @@ buttons.forEach((item) => {
         } else if (display.innerText != "" && item.id == "equal") {
             display.innerText = eval(display.innerText);
         } else if (display.innerText == "" && item.id == "equal") {
-            display.innerText = "has un calculo";
-            setTimeout(() => (display.innerText = ""), 2000);
+            display.innerText = "Has un calculo";
+            setTimeout(() => (display.innerText = ""), 1000);
         } else {
             display.innerText += item.id;
         }
