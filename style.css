@@ -57,13 +57,22 @@ body {
             background: #458d01;
         }
 
+        .btn-number0 {
+            background: #458d01;
+            width: 130px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-left: 20px;
+        }
+
         .btn-operetor {
             background: #c58a00;
         }
 
-        .btn-plus {
+        .btn-delete {
             background: #00fbff;
-            height: 120px;
         }
 
         .btn-equal {
@@ -137,13 +146,22 @@ body {
         background: #018d8d;
     }
 
+    .btn-number0 {
+        background: #018d8d;
+        width: 130px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+
     .btn-operetor {
         background: #aec500;
     }
 
-    .btn-plus {
+    .btn-delete {
         background: #aec500;
-        height: 120px;
     }
 
     .btn-equal {
